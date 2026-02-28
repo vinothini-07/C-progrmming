@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    double frequency;
+    scanf("%lf", &frequency);
+
+    if (frequency < 3e9)
+        printf("Radio Waves\n");
+    else if (frequency >= 3e9 && frequency < 3e11)
+        printf("Microwaves\n");
+    else if (frequency >= 3e11 && frequency < 4e14)
+        printf("Infrared\n");
+    else if (frequency >= 4e14 && frequency < 7.5e14)
+        printf("Visible Light\n");
+    else if (frequency >= 7.5e14 && frequency < 3e16)
+        printf("Ultraviolet\n");
+    else if (frequency >= 3e16 && frequency < 3e19)
+        printf("X-rays\n");
+    else
+        printf("Gamma Rays\n");
+
+    return 0;
+}
